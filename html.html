@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS LINK-->
+  <link rel="stylesheet" href="css.css">
+    <title>Gmail UI Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=help" />
+    
+ </head>
+    <body>
+       <!--header-starts-->
+    <header class="header">
+           
+      <div class="header-left">
+        <span class="fa-solid fa-bars menu-icon"></span>  
+        <img src="1000072404-removebg (1).png">
+      </div>
+
+      <div class="header-middle">
+        <span class="fa-solid fa-magnifying-glass"></span>
+           <input type="text" placeholder="Search Mail">
+           <i class="fa-solid fa-sliders"></i>
+      </div>
+
+      <div class="header-right">
+        <i class="fa-solid fa-gear"></i>
+        <span class="material-symbols-outlined">
+          apps
+          </span>
+          <span class="fa-solid fa-bell"></span>
+          <i class="fa-solid fa-circle-user user-icon"></i>
+      </div>
+
+    </header>
+     <!--header-ends-->
+
+
+
+      <!--sidebarstarts-->
+     <div class="sidebar">
+     
+       <button class="buttoncompose">
+          
+            <i class='bx bx-pencil'></i>
+            <span>Compose</span>
+          
+        </button>
+        <div class="shortcut-links">
+       <div class=" shortcutlinkactive">
+        <a href=""><img src="inbox_24dp_CECECE_FILL1_wght400_GRAD0_opsz24.png"><p>Inbox</p></a>
+      </div>
+      <div class="shortcutlink">
+        <a href=""><img src="star_24dp_CECECE_FILL0_wght400_GRAD0_opsz24.png"><p>Starred</p></a>
+      </div>
+        <div class="shortcutlink1">
+        <a href=""><img src="schedule_24dp_CECECE_FILL0_wght400_GRAD0_opsz24.png"><p>Snoozed</p></a>
+      </div>
+        <div class="shortcutlink2">
+        <a href=""><img src="send_24dp_CECECE_FILL0_wght400_GRAD0_opsz24.png"><p>Sent</p></a>
+      </div>
+        <div class="shortcutlink3">
+        <a href=""><img src="draft_24dp_CECECE_FILL0_wght400_GRAD0_opsz24.png"><p>Drafts</p></a>
+      </div>
+        <div class="shortcutlink4">
+        <a href=""><img src="keyboard_arrow_down_24dp_CECECE_FILL0_wght400_GRAD0_opsz24.png"><p>More</p></a>
+        </div>
+    </div>
+    <div class="label">
+      <div class="labelicon">
+        <span>Labels</span>
+        <i class='bx bx-plus-medical' style='color:#c4c7c5'  ></i>
+      </div>
+    </div>
+    
+     </div>
+     <!--sidebr ends-->
+
+<!--mainbody starts-->
+     <!--emaillist starts-->
+<div class="emailList">
+  <!--settingstarts-->
+ <div class="emailList-settings">
+   <div class="emailList-settingsleft">
+    <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+     <i class='bx bx-caret-down' style='color:#c4c7c5' ></i>
+     <i class='bx bx-rotate-right' style='color:#c4c7c5' ></i>
+     <i class='bx bx-dots-vertical-rounded' style='color:#c4c7c5'  ></i>
+   </div>
+   <div class="emailList-settingsright">
+    <i class='bx bx-chevron-left' style='color:#c4c7c5' ></i>
+    <i class='bx bx-chevron-right' style='color:#c4c7c5' ></i>
+    <i class='bx bxs-keyboard' style='color:#c4c7c5' ></i>
+    <i class='bx bx-caret-down' style='color:#c4c7c5' ></i>
+   </div>
+ </div>
+ <!--settingends-->
+ 
+ <div class="emaillist-sections">
+   <div class="section section-selected">
+    <i class='bx bxs-inbox' style='color:white' ></i>
+    <h4>Primary</h4>
+  </div>
+
+  <div class="section">
+    <i class='bx bx-purchase-tag' style='color:#c4c7c5' ></i>
+    <h4>Promotions</h4>
+  </div>
+
+  <div class="section">
+    <i class='bx bx-group' style='color:#c4c7c5' ></i>
+    <h4>Social</h4>
+  </div>
+
+  <div class="section">
+    <i class='bx bx-error-circle' style='color:#c4c7c5' ></i>
+    <h4>Updates</h4>
+  </div>
+</div>
+ <!--emaillist row starts-->
+ <div class="emaillist-list">
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:59pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Google</h3>
+    <div class="emailrow-message" style='color:black'>
+      <h4>Login on new device <span class="emailrow-description">-Is this your device?</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:59pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:59pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Google</h3>
+    <div class="emailrow-message">
+      <h4>Login on new device <span class="emailrow-description">-Is this your device?</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:59pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:59pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:58pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:58pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:58pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:58pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:57pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:57pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:57pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:56pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:55pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:55pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:55pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:51pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:51pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:51pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:40pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:40pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:40pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:40pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:40pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:35pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:35pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:31pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:31pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:30pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:30pm</p>
+  </div>
+  <!--email row ends-->
+  
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+   <!--email row starts-->
+   <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+   <!--email row starts-->
+   <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+   <!--email row starts-->
+   <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+   <!--email row starts-->
+   <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+   <!--email row starts-->
+   <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+   <!--email row starts-->
+   <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+
+  <!--email row starts-->
+  <div class="emailrow">
+    <div class="emailrow-options">
+      <span class='bx bx-grid-vertical' style='color:#c4c7c5'  ></span>
+      <i class='bx bx-checkbox' style='color:#c4c7c5' ></i>
+        <i class='bx bx-star star' style='color:#c4c7c5' ></i>
+    </div>
+    <h3 class="emailrow-title">Youtube</h3>
+    <div class="emailrow-message">
+      <h4>You got new Subscriber <span class="emailrow-description">.on your channel</span></h4>
+    </div>
+    <div class="opa">
+      <i class='bx bx-archive-in' style='color:#c4c7c5' ></i>
+      <i class='bx bx-trash' style='color:#c4c7c5' ></i>
+      <i class="fa-regular fa-clock" style="color: #c4c7c5;"></i>
+    </div>
+    <p class="emailrow-time">9:29pm</p>
+  </div>
+  <!--email row ends-->
+</div>
+ <!--emaillist row ends-->
+ </div>
+ <!--emaillist ends-->
+ <!--mainbody ends-->
+    
+       
+<script src="scrip.js"></script>
+</body>
+</html>
+
+
+
